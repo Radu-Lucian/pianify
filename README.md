@@ -28,4 +28,4 @@ Pianify is written entirely in C++ and depends on the following included librari
  - Boost
 
 The only required library is:
- - Qt 
+ - Qt (tested on version 5.13.1)
