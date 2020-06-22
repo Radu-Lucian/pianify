@@ -21,10 +21,10 @@
 namespace fs = std::filesystem;
 
 InstrumentRecognizerDialog::InstrumentRecognizerDialog(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::InstrumentRecognizerDialog)
+	QDialog(parent),
+	ui(new Ui::InstrumentRecognizerDialog)
 {
-    ui->setupUi(this);
+	ui->setupUi(this);
 	ui->recognizerProgressBar->setVisible(false);
 
 	connect(ui->backButton, SIGNAL(clicked()), this, SLOT(onBackButtonClicked()));
@@ -57,7 +57,7 @@ InstrumentRecognizerDialog::InstrumentRecognizerDialog(QWidget *parent) :
 
 InstrumentRecognizerDialog::~InstrumentRecognizerDialog()
 {
-    delete ui;
+	delete ui;
 }
 
 void InstrumentRecognizerDialog::recognizeInstuments()

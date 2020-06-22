@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QDialog>
+#include <memory>
 
 class WaveFile;
 
@@ -10,11 +11,11 @@ class InstrumentRecognizerDialog;
 
 class InstrumentRecognizerDialog : public QDialog
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit InstrumentRecognizerDialog(QWidget *parent = nullptr);
-    ~InstrumentRecognizerDialog();
+	explicit InstrumentRecognizerDialog(QWidget *parent = nullptr);
+	~InstrumentRecognizerDialog();
 
 private slots:
 	void onInstrumentRecognizerButtonClicked();
@@ -40,7 +41,7 @@ private:
 	void recognizeInstuments();
 
 private:
-    Ui::InstrumentRecognizerDialog *ui;
+	Ui::InstrumentRecognizerDialog *ui;
 	std::string m_loadedFileName;
 	std::unique_ptr<WaveFile> m_loadedWaveFile;
 	std::string m_midiOutPath;
