@@ -1,0 +1,48 @@
+#ifndef DIRECTORIES_H
+#define DIRECTORIES_H
+
+class directories
+{
+public:
+	static constexpr const char* getAudioSamplesDir() 
+	{
+		return "@AUDIO_SAMPLES_DIR@";
+	}
+	
+	static constexpr const char* getMidiGeneratedDir() 
+	{
+		return "@MIDI_GENERATED_DIR@";
+	}
+	
+	static constexpr const char* getAudioTestSamplesDir()
+	{
+		return "@AUDIO_TEST_SAMPLES_DIR@";
+	}
+
+	static constexpr const char* getDesignDir()
+	{
+		return "@DESIGN_DIR@";
+	}
+	
+	static constexpr const char* getResourcesDir()
+	{
+		return "@RESOURCES_DIR@";
+	}
+	
+	static constexpr const char* getModelsDir()
+	{
+		return "@MODELS_DIR@";
+	}
+	
+//	static constexpr char kPathSeparator =
+//#ifdef _WIN32
+//		'\\'
+//#else
+//		'/'
+//#endif
+//		;
+	static constexpr char kPathSeparator ='/';
+};
+
+
+#endif
