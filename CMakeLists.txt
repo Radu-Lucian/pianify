@@ -7,7 +7,7 @@ option(BUILD_GUI "Do you want to build the graphical user interface?" ON)
 option(BUILD_CLI "Build the command line interface?" OFF)
 
 if(BUILD_GUI)
-	set(Qt5_DIR "C:/Qt/5.13.1/msvc2017_64/lib/cmake/Qt5")
+	set(Qt5_DIR "C:/Qt/5.15.0/msvc2019_64/lib/cmake/Qt5")
 endif()
 
 if(USE_BOOST)
